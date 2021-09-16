@@ -1,7 +1,7 @@
-const TitleHeader = () => {
+const TitleHeader = ({title}) => {
   return (
     <div>
-      <h1>Daily Task List</h1>
+      <h1>{title}</h1>
       <span id="date-today"></span>
     </div>
   );
