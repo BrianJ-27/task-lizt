@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from 'react';
+import TitleHeader from "./components/Title";
 
 const App = () => {
 
@@ -17,10 +18,7 @@ const App = () => {
 
   return (
     <main className="App">
-      <div>
-        <h1>Daily Task List</h1>
-        <span id="date-today"></span>
-      </div>
+      <TitleHeader/>
       <div>
         <form>
           <fieldset>
