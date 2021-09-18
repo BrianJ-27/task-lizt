@@ -19,9 +19,11 @@ const App = () => {
 
   return (
     <main className="App">
+      <div>
       <TitleHeader
         title = 'Daily Task List'
       />
+      </div>
       <div>
         <Form
           handleInputData = {handleUpdate}

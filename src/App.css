@@ -3,3 +3,16 @@
   padding: .25em 1em;
 }
 
+.btn {
+  border-radius: 4px;
+  background-color: #1cb5e0;
+  border: 1px solid #000046;
+  padding: .5em;
+  color: #000046;
+  width: 50%;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 1em 0;
+  letter-spacing: 1px;
+}
+

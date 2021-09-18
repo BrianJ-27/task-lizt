@@ -1,8 +1,12 @@
-const TitleHeader = ({title}) => {
+const TitleHeader = ({ title }) => {
+  const mydate = new Date();
+  const showDate =
+    mydate.getMonth() + 1 + "/" + mydate.getDate() + "/" + mydate.getFullYear();
+
   return (
     <div>
       <h1>{title}</h1>
-      <span id="date-today"></span>
+      <span className="current-date">{showDate}</span>
     </div>
   );
 };

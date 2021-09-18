@@ -3,12 +3,22 @@
 }
 
 html {
-  background: linear-gradient(20deg, #E8DD3F 50%,#000 50%);
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,7 +26,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
 }
 
 body,
@@ -34,15 +44,19 @@ button {
   padding: 0 0;
 }
 
-
 h1 {
   font-size: 1.8em;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 h1,
 fieldset {
   text-transform: uppercase;
+}
+
+span {
+  display: block;
+  padding-bottom: 1em;
 }
 
 input {
@@ -52,4 +66,8 @@ input {
 
 fieldset {
   border: none;
+}
+
+legend {
+  margin-top: 3em;
 }
